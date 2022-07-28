@@ -48,12 +48,8 @@ namespace AlgoAndDs
             int len = i.Length;
             int position = len - 1;
             StringBuilder reversed = new StringBuilder();
-
             for (int j = 0; j < len; j++, position--)
-            {
-                //store reversed string inside variable
-                reversed.Append(i[position]);
-            }
+                reversed.Append(i[position]); //store reversed string inside variable
             return reversed.ToString();
         }
 
@@ -64,9 +60,7 @@ namespace AlgoAndDs
             for (int j = 0; j < len; j++)
             {
                 if (numbers[j] != currentNumber)
-                {
                     return numbers[j] - 1;
-                }
                 currentNumber++;
             }
             return -1;
